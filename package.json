@@ -1,0 +1,19 @@
+{
+  "name": "gasteiz-developers-leaflet",
+  "version": "0.1.0",
+  "description": "Gasteiz Developers meetup: Taller de mapa web con leaflet.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start -s 'app' -f 'app' --index 'index.html'"
+  },
+  "author": "dmarchena",
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": "^1.3.4",
+    "leaflet-ajax": "^2.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}
