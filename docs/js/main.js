@@ -39,7 +39,7 @@ const grupoCosas = L.layerGroup();
 const overlays = {
   'Cosas guays': grupoCosas,
   'Pueblos': new L.GeoJSON.AJAX(
-    '/data/pueblos.geojson',
+    '/gasteizdev-leaflet/data/pueblos.geojson',
     {
       onEachFeature: (f, l) => {
         l.bindPopup(f.properties.municipality)
@@ -47,7 +47,7 @@ const overlays = {
     }
   ),
   'Centros de salud': new L.GeoJSON.AJAX(
-    '/data/salud.geojson',
+    '/gasteizdev-leaflet/data/salud.geojson',
     {
       onEachFeature: (f, l) => {
         l.bindPopup(f.properties.nombre)
